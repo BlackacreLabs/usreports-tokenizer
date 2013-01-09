@@ -81,9 +81,6 @@ public class PDFTokenizer extends PageDrawer {
 		String font = text.getFont().getBaseFont();
 		float x = text.getX();
 		float y = text.getY();
-		// exclude page codes
-		if (size == FontFamily.PAGE_CODE_SIZE)
-			return;
 
 		// exclude headers
 		if (y < 170.0)
